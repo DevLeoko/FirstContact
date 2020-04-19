@@ -1,0 +1,16 @@
+mail: "schöber.leon@web.com"
+info:
+  title: "Loprem ipsum"
+  text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus cumque velit dolor excepturi sapiente saepe
+    corporis? Quidem, amet minus! Quam!"
+footer:
+  title: "Companies I worked with"
+  text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus cumque velit dolor excepturi sapiente saepe
+    corporis? Quidem, amet minus! Quam!"
+# Place images in /assets/images/clients/
+clientLogos:
+  - "client1.png"
+  - "client1.png"
+  - "client1.png"
+  - "client1.png"
+  - "client1.png"

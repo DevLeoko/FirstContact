@@ -14,27 +14,23 @@ layout: default
 </div>
 
 <div id="intoText">
-  <h1>Loprem ipsum</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus cumque velit dolor excepturi sapiente saepe
-    corporis? Quidem, amet minus! Quam!</p>
+  <h1>{{site.data.intro.info.title}}</h1>
+  <p>{{site.data.intro.info.text}}</p>
   <br>
   <div class="mailInfo">
     <img src="{{site.url}}/assets/icons/mail_outline-18dp.svg">
-    <div class="text">schöber.leon@web.com</span>
+    <div class="text">{{site.data.intro.mail}}</span>
     </div>
   </div>
 </div>
 
 <div id="footerText">
-  <h1>Companies I worked with</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus cumque velit dolor excepturi sapiente saepe
-    corporis? Quidem, amet minus! Quam!</p>
+  <h1>{{site.data.intro.footer.title}}</h1>
+  <p>{{site.data.intro.footer.text}}</p>
 </div>
 
 <div id="logos">
-  <img src="{{site.url}}/assets/images/clients/client1.png">
-  <img src="{{site.url}}/assets/images/clients/client1.png">
-  <img src="{{site.url}}/assets/images/clients/client1.png">
-  <img src="{{site.url}}/assets/images/clients/client1.png">
-  <img src="{{site.url}}/assets/images/clients/client1.png">
+  {% for logo in site.data.intro.clientLogos%}
+  <img src="{{site.url}}/assets/images/clients/{{logo}}">
+  {% endfor %}
 </div>
