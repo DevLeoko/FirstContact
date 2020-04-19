@@ -1,0 +1,240 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap");
+
+$grey: #585858;
+$lightgrey: #9e9e9e;
+$primaryColor: #fa4a53; //{{ site.primaryColor }};
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(247, 236, 236);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation: 10s ease-in-out 0s infinite background-animation;
+  // animation-play-state: running;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: inline-block;
+
+  margin: 0;
+}
+
+.button {
+  font-size: 9pt;
+  padding: 5px;
+  text-align: center;
+  // font-weight: bold;
+  color: #fff;
+  background-color: $primaryColor;
+}
+
+#brandingImage {
+  height: 4vh;
+  margin: 0 auto;
+  display: block;
+}
+
+#legalNotice {
+  margin: 0 auto;
+  height: 3vh;
+  width: 60vw;
+  text-align: right;
+
+  a {
+    font-size: 9pt;
+    color: $grey;
+  }
+}
+
+#content {
+  margin: 0 auto;
+
+  width: 60vw;
+  height: 80vh;
+  margin-top: 10vh;
+
+  display: grid;
+
+  background-color: #fff;
+
+  grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+
+  #formDialogBackground {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    grid-column: 9/15;
+    grid-row: 3/11;
+  }
+
+  #formDialogMain {
+    grid-column: 9/15;
+    grid-row: 3/9;
+    padding: 40px;
+
+    display: block;
+
+    input,
+    textarea {
+      color: $grey;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      border: 1.5px solid $lightgrey;
+
+      box-sizing: border-box;
+
+      transition-duration: 100ms;
+      transition-timing-function: ease-out;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-left: 5px solid $primaryColor;
+      outline: none;
+    }
+
+    h1 {
+      color: $grey;
+      text-transform: uppercase;
+      font-size: 12pt;
+    }
+  }
+
+  #formDialogSend {
+    grid-column: 9/15;
+    grid-row: 9/11;
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  #lower {
+    grid-column: 1/17;
+    grid-row: 9/17;
+    background-color: $primaryColor;
+  }
+
+  #intoText {
+    grid-column: 3/8;
+    grid-row: 3/8;
+    // background-color: green;
+
+    &.right {
+      grid-column: 7/11;
+      grid-row: 3/8;
+    }
+
+    h1 {
+      color: $grey;
+      text-transform: uppercase;
+      margin-top: 0;
+      font-size: 16pt;
+    }
+
+    p {
+      color: $lightgrey;
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
+    .mailInfo {
+      display: flex;
+    }
+
+    .text {
+      margin-left: 5px;
+      color: $lightgrey;
+      font-size: 10pt;
+    }
+  }
+
+  #footerText {
+    grid-column: 3/8;
+    grid-row: 11/14;
+
+    &.right {
+      grid-column: 6/13;
+      grid-row: 12/16;
+    }
+    // background-color: green;
+    h1 {
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 0;
+      font-size: 14pt;
+    }
+
+    p {
+      color: #fff;
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+  }
+
+  #logos {
+    grid-column: 3/15;
+    grid-row: 14/16;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // background-color: green;
+    img {
+      height: 50%;
+    }
+  }
+
+  #headBack {
+    // grid-column: 3/8;
+    // grid-row: 4/5;
+    grid-column: 3/7;
+    grid-row: 8/10;
+
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2), 0px 5px 1px $primaryColor;
+
+    img {
+      height: 24px;
+      margin-right: 6px;
+    }
+
+    a {
+      display: flex;
+      height: 100%;
+      text-decoration: none;
+      font-size: 13pt;
+
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes background-animation {
+  // 0% {
+  //   background-image: url("/assets/images/backgrounds/1.png");
+  // }
+  // 40% {
+  //   background-image: url("/assets/images/backgrounds/1.png");
+  // }
+  // 50% {
+  //   background-image: url("/assets/images/backgrounds/2.png");
+  // }
+  // 90% {
+  //   background-image: url("/assets/images/backgrounds/2.png");
+  // }
+  // 100% {
+  //   background-image: url("/assets/images/backgrounds/1.png");
+  // }
+}
