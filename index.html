@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="formDialogBackground">
 </div>
-<div id="formDialogMain">
+<div id="formDialogMain" class="formStyle">
   <h1>Contact</h1>
   <input type="text" placeholder="Name or Company">
   <input type="text" placeholder="E-Mail">
@@ -22,6 +22,11 @@ layout: default
     <div class="text">{{site.data.intro.mail}}</span>
     </div>
   </div>
+  <div class="twitterInfo">
+    <img src="{{site.url}}/assets/icons/twitter24.svg">
+    <div class="text">{{site.data.intro.twitter}}</span>
+    </div>
+  </div>
 </div>
 
 <div id="footerText">
@@ -33,4 +38,12 @@ layout: default
   {% for logo in site.data.intro.clientLogos%}
   <img src="{{site.url}}/assets/images/clients/{{logo}}">
   {% endfor %}
+</div>
+
+<div id="mobileContact" class="formStyle">
+  <h1>Contact</h1>
+  <input type="text" placeholder="Name or Company">
+  <input type="text" placeholder="E-Mail">
+  <textarea placeholder="Message..."></textarea>
+  <div class="button">SEND</div>
 </div>
