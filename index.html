@@ -17,16 +17,17 @@ layout: default
   <h1>{{site.data.intro.info.title}}</h1>
   <p>{{site.data.intro.info.text}}</p>
   <br>
-  <div class="mailInfo">
+  <a href="mailto:{{site.data.intro.mail}}?subject={{site.data.intro.mailAction.subject}}&body={{site.data.intro.mailAction.body}}"
+    target="_blank" class="mailInfo">
     <img src="{{site.url}}/assets/icons/mail_outline-18dp.svg">
-    <div class="text">{{site.data.intro.mail}}</span>
+    <div class="text">{{site.data.intro.mail}}
     </div>
-  </div>
-  <div class="twitterInfo">
+  </a>
+  <a href="http://twitter.com/{{site.data.intro.twitter}}" target="_blank" class="twitterInfo">
     <img src="{{site.url}}/assets/icons/twitter24.svg">
-    <div class="text">{{site.data.intro.twitter}}</span>
+    <div class="text">@{{site.data.intro.twitter}}
     </div>
-  </div>
+  </a>
 </div>
 
 <div id="footerText">

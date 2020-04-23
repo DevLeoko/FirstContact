@@ -1,5 +1,8 @@
 mail: "schöber.leon@web.com"
-twitter: "@leooon"
+mailAction:
+  subject: "Hey Leon!"
+  body: "Greetings,"
+twitter: "lpschoeber"
 info:
   title: "Loprem ipsum"
   text:
