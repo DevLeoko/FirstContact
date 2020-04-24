@@ -2,3 +2,5 @@ url: "https://devleoko.github.io/FirstContact"
 primaryColor: "#fa4a53"
 title: "Leon Schöber - Designer"
 legalNotice: "Impressum"
+# formspree.io works great for static sites
+contactAction: "https://formspree.io/mdolqjeq"

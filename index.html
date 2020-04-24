@@ -3,14 +3,14 @@ layout: default
 ---
 <div id="formDialogBackground">
 </div>
-<div id="formDialogMain" class="formStyle">
+<form action="{{site.contactAction}}" method="POST" id="formDialogMain" class="formStyle">
   <h1>Contact</h1>
-  <input type="text" placeholder="Name or Company">
-  <input type="text" placeholder="E-Mail">
-  <textarea placeholder="Message..."></textarea>
-</div>
+  <input type="text" name="name" placeholder="Name or Company">
+  <input type="email" name="_replyto" placeholder="E-Mail">
+  <textarea name="text" placeholder="Message..."></textarea>
+</form>
 <div id="formDialogSend">
-  <div class="button">SEND</div>
+  <div onclick="document.getElementById('formDialogMain').submit()" class="button">SEND</div>
 </div>
 
 <div id="intoText">
@@ -41,10 +41,10 @@ layout: default
   {% endfor %}
 </div>
 
-<div id="mobileContact" class="formStyle">
+<form action="{{site.contactAction}}" method="POST" id="mobileContact" class="formStyle">
   <h1>Contact</h1>
-  <input type="text" placeholder="Name or Company">
-  <input type="text" placeholder="E-Mail">
-  <textarea placeholder="Message..."></textarea>
-  <div class="button">SEND</div>
-</div>
+  <input type="text" name="name" placeholder="Name or Company">
+  <input type="email" name="_replyto" placeholder="E-Mail">
+  <textarea name="text" placeholder="Message..."></textarea>
+  <div onclick="document.getElementById('mobileContact').submit()" class="button">SEND</div>
+</form>
