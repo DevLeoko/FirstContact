@@ -157,9 +157,12 @@ body {
   }
 
   .formStyle {
-    input,
+    input[type="text"],
+    input[type="email"],
     textarea {
+      font-family: "Raleway", sans-serif;
       color: $grey;
+      font-size: 10pt;
       padding: 10px;
       margin-top: 5px;
       margin-bottom: 5px;
