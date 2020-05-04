@@ -1,8 +1,8 @@
-mail: "schöber.leon@web.com"
+mail: "max@muster.com"
 mailAction:
-  subject: "Hey Leon!"
+  subject: "Hey Max!"
   body: "Greetings,"
-twitter: "lpschoeber"
+twitter: "twitter"
 info:
   title: "Loprem ipsum"
   text:
@@ -15,8 +15,8 @@ footer:
     corporis? Quidem, amet minus! Quam!"
 # Place images in /assets/images/clients/
 clientLogos:
-  - "client1.png"
-  - "client1.png"
-  - "client1.png"
-  - "client1.png"
-  - "client1.png"
+  - "logo1.svg"
+  - "logo2.svg"
+  - "logo3.svg"
+  - "logo4.svg"
+  - "logo5.svg"

@@ -1,6 +1,7 @@
 url: "https://devleoko.github.io/FirstContact"
 primaryColor: "#fa4a53"
-title: "Leon Schöber - Designer"
+title: "Max Mustermann - Human"
+logo: "logo.svg"
 legalNotice: "Impressum"
 # formspree.io works great for static sites
-contactAction: "https://formspree.io/mdolqjeq"
+contactAction: ""
