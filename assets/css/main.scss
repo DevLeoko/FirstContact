@@ -67,11 +67,12 @@ body {
 
 #legalNotice {
   margin: 0 auto;
-  height: 3vh;
   width: 60vw;
   text-align: right;
   @media screen and (max-width: 600px), (max-height: 500px) {
-    width: 80vw;
+    position: absolute;
+    width: fit-content;
+    right: 10vw;
   }
 
   a {
@@ -358,14 +359,30 @@ body {
     display: none;
     @media screen and (max-width: 600px), (max-height: 500px) {
       display: block;
-      background-color: #fff;
-      box-shadow: $boxShadowStrong;
       width: 80vw;
-      margin: 0px auto;
-      margin-top: 50px;
-      padding: 8vw;
+      margin: 50px auto 0;
 
       box-sizing: border-box;
+
+      h1 {
+        color: white;
+      }
+
+      input, textarea {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+        margin-bottom: 10px;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: white;
+      }
+
+      .button {
+        color: $grey;
+        background-color: white;
+      }
     }
   }
 }
